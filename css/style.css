@@ -365,7 +365,7 @@ textarea {
   }
 }
 .projects__row:last-child {
-  margin-bottom: 0;
+  margin-bottom: 10rem;
 }
 .projects__row-img-cont {
   overflow: hidden;
