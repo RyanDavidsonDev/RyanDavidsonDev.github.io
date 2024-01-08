@@ -349,7 +349,7 @@ textarea {
 
 .projects__row {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.5fr 1.1fr;
   grid-gap: 5rem;
   margin-bottom: 10rem;
 }
@@ -364,6 +364,10 @@ textarea {
     text-align: center;
   }
 }
+.projects__row:nth-child(2){
+  grid-template-columns: 1.1fr 1.5fr;
+  
+}
 .projects__row:last-child {
   margin-bottom: 10rem;
 }
@@ -374,7 +378,7 @@ textarea {
   width: 100%;
   padding-top: 1.5rem;
   display: block;
-  object-fit: cover;
+  object-fit: fill;
 }
 .projects__row-content {
   display: flex;
