@@ -97,7 +97,7 @@ textarea {
   }
 }
 .heading-sec__mb-med {
-  margin-bottom: 8rem;
+  margin-bottom: 9rem;
 }
 @media only screen and (max-width: 56.25em) {
   .heading-sec__mb-med {
@@ -203,7 +203,7 @@ textarea {
 }
 
 .sec-pad {
-  padding: 2rem 0;
+  padding: 10rem 0;
 }
 @media only screen and (max-width: 56.25em) {
   .sec-pad {
