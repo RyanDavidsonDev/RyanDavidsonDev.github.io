@@ -340,6 +340,7 @@ textarea {
   font-size: 1.8rem;
   color: grey;
   max-width: 60rem;
+  text-align: justify;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
@@ -409,6 +410,7 @@ textarea {
 .projects__row-content-desc {
   font-size: 1.8rem;
   color: grey;
+  text-align: justify;
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 2rem;
@@ -520,9 +522,10 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(32, 200, 32, 0.8), rgba(32, 200, 32, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(16, 200, 16, 0.75), rgba(16, 200, 16, 0.75)), url(../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
+  height: 55rem;
   position: relative;
 }
 @media only screen and (max-width: 37.5em) {
@@ -532,10 +535,12 @@ textarea {
   }
 }
 .project-cs-hero__content {
-  padding: 25rem 0 17rem 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 90rem;
   width: 92%;
-  margin: auto;
 }
 @media only screen and (max-width: 37.5em) {
   .project-cs-hero__content {
@@ -587,6 +592,7 @@ textarea {
 .project-details__desc-para {
   font-size: 1.8rem;
   line-height: 1.7;
+  text-align: justify;
   color: grey;
   margin-bottom: 2rem;
 }
