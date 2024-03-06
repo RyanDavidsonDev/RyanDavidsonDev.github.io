@@ -147,10 +147,12 @@ textarea {
   max-width: 80rem;
   margin: auto;
   line-height: 1.6;
+  padding-bottom: 5rem;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-sec__sub {
     font-size: 1.8rem;
+    padding-bottom: 5rem;
   }
 }
 .heading-sec__sub--lt {
@@ -179,6 +181,7 @@ textarea {
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
+  margin: 0;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -194,6 +197,8 @@ textarea {
 .btn--theme {
   background: #20c820;
   color: #fff;
+  padding: calc(1.5rem - 2px) calc(5rem - 2px);
+
 }
 .btn--theme-inv {
   color: #20c820;
