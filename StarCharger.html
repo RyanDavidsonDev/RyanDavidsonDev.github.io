@@ -167,7 +167,7 @@
               />
               <p class="project-details__image-caption">
                 The Stats surrounding how the player charged and used their energy were 
-                prototyped through parameterized values and Unity's ScriptableObject system 
+                prototyped through parameterized values and Unity's ScriptableObject system.
               </p>
               <img
                 src="./assets/png/StarCharger/sc-entities.png"
@@ -179,6 +179,12 @@
                 The entity generation systems had their own set of parameterized values, which allowed 
                 us to identify how best to simplify the systems later on.
               </p>
+              <img
+                src="./assets/png/StarCharger/SC-options.png"
+                alt="A Gameplay Screenshot "
+                class="project-details__row-img"
+                loading="lazy"
+              />
               <img
                 src="./assets/png/StarCharger/sc-loss.png"
                 alt="A Gameplay Screenshot "
@@ -199,62 +205,66 @@
                 While no one technical system stands out among my work on Star Charger, 
                 each and every aspect of the project has deepened my understanding of both
                 Unity and game development best practices. In particular I enjoyed and 
-                learned the most from protoptyping the gameplay mechanics, and managing the 
+                learned the most from protoptyping the gameplay mechanics and managing the 
                 Git repository.
               </p>
               <p class="project-details__row-content-desc">
                 The initial concept for our game had mostly do with the movement of the character,
                 with only basic details planned for the energy mechanics and movement of the 
-                asteroids. This left substantial space with the potential (but also necessity) to
-                explore what exactly each of those mechanics would look like. I knew that fun 
-                couldn't realistically be evaluated without seeing the ideas in action, so I 
-                wanted to give us a basis to test them firsthand as quickly as possible. 
-                However, I also wanted us to be able to revisit, explore, and iterate on our ideas.
-                A common strategy I used was to frequently parameterize the gameplay values, this 
-                allowed us to quickly change (or even temporarily remove) a mechanic without 
-                having to rewrite or even recompile our code. 
-                
+                asteroids. This resulted in significant potential (but also necessity) to
+                explore what exactly each of those mechanics would look like. I know that predicting
+                how fun an idea is can be unreliable without seeing it firsthand. So I wanted to
+                establish a foundation  to see our ideas in action. However, I also wanted us to be 
+                able to easily revisit, explore, and iterate on our ideas.
+                A common strategy I used was to frequently parameterize values important to 
+                the gameplay, this allowed us to quickly change (or even temporarily remove) 
+                a mechanic without having to rewrite or even recompile our code.                 
+              </p>
+              <p class="project-details__row-content-desc">
+                The entity generation systems that handle asteroids and energy were one of the
+                first ones we built, but we kept iterating on them through much of development. 
+                By parameterizing the values, we were able to assign different speeds, 
+                directions, and frequencies for every entity. The asteroids were also given 
+                individual values for health, size, and energy amounts, all of which were 
+                correlated. We were also able to assign randomized ranges for the values. Trying
+                to sort through this complex system through code alone would have been untenable,
+                even with our technical expertise. But because
+                all of these variables were accessible through the editor, we were easily able 
+                to identify the most important values - minimizing or completely nullifying the 
+                ones that were unimpactful or frustrating. All of the entities that 
+                were spawned were also 
+                handled through Unity's object pooling system to minimize the performance 
+                costs of repeatedly destroying and reinstancing entities.
               </p>
               <p class="project-details__row-content-desc">
                 With the player energy and speed
                 mechanics specifically, I also utilized Unity's ScriptableObject system. By 
-                building various templates and through simple inheritance structures, we were able 
-                to not only quickly swap out various configurations, but even store them on hand 
+                building various templates and through simple inheritance structures, we could 
+                not only quickly swap out various configurations, but even store them on hand 
                 for future revisits. This allowed us to move on from an idea without abandoning  
-                it altogether. I do somewhat regret that the systems in place ended up being
-                rather complicated (from the perspective of both the players and developers). But 
-                thanks to having set up that prototpying infrastructure, I can 
-                guarantee that the final result was fun and satisfying. And now that I have experience with the process, I'll be better able to prioritize 
-                the components of each system, and keep them more streamlined in the future.
+                it altogether. On reflection, the systems that we ended up settling on were rather
+                complicated and hard for players to understand. But the protype infrastructure
+                that we put in place allows us to at least know the mechanics are satisfying once understood,
+                and will make it much easier if we decide to rework the system in the future.
+                Most importantly, now that I more thoroughly understand the process, I'll be better 
+                able to prioritize the most important aspects. Meaning the next project I work on
+                will be much more streamlined from both a player and developer perspective.
               </p>
               <p class="project-details__row-content-desc">
-                The entity generation systems that handle asteroids and energy were one of the first 
-                ones we built, but we kept 
-                iterating on them through much of development. By parameterizing the values, we 
-                were able to assign different speeds, directions, and frequencies for every entity. 
-                The asteroids were also given individual values for health, size, and energy amounts,
-                all of which were correlated. We were also able to assign randomized ranges for the 
-                values. By keeping these values accessible, we were able to identify the most important 
-                values, minimizing or completely nullifying the ones that turned out to be less impactful 
-                or even frustrating. 
-                 All of the entities that were spawned were funneled through Unity's object pooling
-                system to minimize the performance costs of destruction and reinstanciation of entities.
-
-              </p>
-              <p class="project-details__row-content-desc">
+                Source Control was also an essential tool for both our productivity, and one I became
+                very familiar with.
                 Even if I hadn't been the producer on this project, I'm sure I still would've been
-                heavily involved and invested in the git management and organization. I've spent
-                a significant amount of time researching git. How it works and how to use it 
-                effectively and efficiently. Put simply, I find it incredibly interesting to 
-                examine how such a powerful tool interfaces with the systems being built by the 
-                developers. It has consequences on not only the technical functionality of your 
-                project, but also the collaborative workflow. I learned to stay on top of both 
-                of these aspects. Anticipating issues before they came up, and resolving the 
+                heavily involved and invested in the management and organization of our git repository
+                because I do earnestly find it a fascinating tool to learn how to use effectively. 
+                It's just incredibly gratifying to learn how to integrating the disparate
+                systems each developer produces, and even explore different iterations of them.
+                I learned how to use it for both the projects technical functionality and collaborative
+                workflow. Anticipating issues before they came up, resolving the 
                 ones that did, and facilitating the integration of everyone's work. Managing 
-                all of this also resulted in me gaining a wide understanding of all 
-                of our game systems, which was invaluable for debugging. Any time a teammate
-                ran into an issue or had a question, I was able to tell them exactly where to 
-                start looking for the related functionaltiy. 
+                all of this also provided me a wide understanding of all 
+                of our game systems, which was invaluable for debugging and design feedback. 
+                Any time a teammate ran into an issue or had a question, I was able to tell them 
+                exactly where to start looking for the related functionality. 
               </p>
               <p class="project-details__row-content-desc"> 
                 
@@ -306,39 +316,25 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ryan-davidson-dev">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
-                  alt="icon"
+                  alt="linkedin icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://github.com/ryanDavidsondev">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
-                  alt="icon"
+                  alt="github icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://x.com/FerrousGameDev">
                 <img
                   class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
+                  src="./assets/png/Twitter-X-logo.png"
+                  alt="icon for X, formerly known as Twitter"
                 />
               </a>
             </div>
@@ -351,11 +347,13 @@
           </div>
         </div>
 
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
+          &copy; Copyright 2024. Based on Template Made by
           <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
             >Ram Maheshwari</a
-          >
+          >.
+          <br>Template edited by Ryan Davidson
         </div>
       </div>
     </footer>
