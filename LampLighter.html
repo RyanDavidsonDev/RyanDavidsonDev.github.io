@@ -127,8 +127,8 @@
                 from victorian era lamplighters. As the player explores looking for lamps, they are given a 
                 lantern with a continually decreasing light level. They can replenish this lantern with limited
                 reserves of oil, which can also be refilled by finding collectible oil cans across the map. 
-                As they explore, they are also likely to encounter ghosts, which will pursue the player unless
-                the player is safe in the light of one of the lanterns. 
+                As they explore, they also encounter ghosts, which will pursue the player unless
+                they are safe in the light of one of the lamps. 
               </p>
               <p class="project-details__desc-para">
                 This was the first Game Jam game that I was able to bring to full completion. Previously,
@@ -136,10 +136,11 @@
                 for this particular game jam I'd had the foresight 
                 to scope the game more appropriately, and enough experience under my belt 
                 to manage the project effectively enough that it had been mostly complete at the 
-                end of the jam. There had been a few missing features and polish, but it was all minimal
-                enough that I was able to finish it indepently within a week. I reuploaded a full version of
-                the game (version 1.0) a on Halloween night. After this release,
-                I received further feedback from my friends, which allowed me to hone in on a few 
+                end of the jam. There had been a few missing features and polish, but they were minimal
+                enough that I was able to finish it independently within a week. I reuploaded a full version of
+                the game (version 1.0) on Halloween night. After this release,
+                I received further feedback from my friends and other playtesters, which allowed me to 
+                hone in on a few 
                 design issues with the game. I went on to revisit these issues and released the 
                 final and current version of LampLighter at the start of December 2023. 
               </p>
@@ -183,10 +184,10 @@
 
             
             <div class="project-details__row-content">
-              <h3 class="project-details__row-content-title">Design Deep Dive: Map Mechanic</h3>
+              <h3 class="project-details__row-content-title">Journal Entry: Map Mechanic Design</h3>
               <p class="project-details__row-content-desc">
-                After I released version 1.0, A common issue I was noticing players were facing
-                was that they were struggling to explore the full map on time. The game had 
+                After I released version 1.0, a common issue I was noticing players were facing
+                was that they were struggling to explore the full map with the time provided. The game had 
                 a max timer of 10 minutes (less if they fully ran out of oil), and the win 
                 condition was to locate all 30 lamps. This was a bit excessive, especially 
                 given the likelihood that a player could easily miss one lamp early on, 
@@ -194,32 +195,33 @@
               </p>
               <p class="project-details__row-content-desc">
                 This was an interesting design issue to address, as I wanted to find a way
-                to resolve it without trivializing the game's exploration - which had 
-                become one of the main pillars of the gameplay. An initial idea I had was some
+                to resolve it without trivializing the game's exploration - a core pillar
+                 of the gameplay. An initial idea I had was some
                 effect that would guide the players to the nearest lamp. I considered implementing
                 this as a subtle particle effect that would grow more prominent as the player 
                 activated more lamps. However, I decided against this as it would have too heavily 
-                guided the player and thus trivialized exploration as soon as they realized it.
+                guided the player and thus trivialized exploration as soon as they understood
+                the mechanic.
               </p>
               <p class="project-details__row-content-desc">
-                While the map also made exploration easier, I took care it worked alongside the 
-                exploration, rather than fully erasing its significance. Most crucially, the map 
+                While the map also made exploration easier, I took care to ensure it worked alongside the 
+                exploration, rather than fully eclipsing it. Most crucially, the map 
                 does not pause time. This was to add weight to its usage, preventing players from 
-                overusing it, lest they burn through too much oil or become caught by a ghost. 
+                relying on it too heavily, lest they use too much oil or become caught by a ghost. 
                 Leaving the player vulnerable when looking at the map the map also incentivized 
-                using it only when in the light of a lamp, thus emphasizing their role as 
-                a source of safety, entwining well with the horror-inspired atmosphere of the game. 
+                using it only when in the light of a lamp. This emphasized the role of the lamps as 
+                a rare source of safety, in line with the horror-inspired atmosphere of the game. 
                 I also made it so that the map only unlocked after a certain number of lamps (10/30)
-                so that they would have to engage with the exploration indepently before using it
+                so that they would have to engage with the exploration independently before using it
               </p>
               <p class="project-details__row-content-desc"> 
-                The visual presentation of the map also helped to ensure that it synergized with 
-                and contributed to the exploration. One of the earliest decisions I made about the
+                The visual presentation of the map also helped balance itss relationship to the 
+                exploration. One of the earliest decisions I made about the
                 map was to have it only show areas already lit up by lamps. This prevented the player
                 from learning anything about the level preemptively, and ensured that it only served
                 as a reminder of progress already made. Moreover, by giving the lamps a set of lights that were 
                 wider, but only visible to the camera used to render the map, The player was better able
-                to see more of the art our that our artist had spent so much time on. I realized
+                to see more of the . I realized
                 it was unfortunate how the dark atmosphere of our game limited how much of her work
                 could be represented, so I was very grateful for this workaround to allow us to show it off.
                 
@@ -227,11 +229,6 @@
               <!--  href="./project-1.html" -->
             </div>
           </div>
-          
-
-          
-
-
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
@@ -242,23 +239,22 @@
                 <div class="skills__skill">Itch</div>
                 <div class="skills__skill">GIT</div>
                 <div class="skills__skill">Trello</div>
-                <div class="skills__skill">Audacity</div>
                 <div class="skills__skill">Libresprite</div>
               </div>
             </div>
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">See Live - Playable in Browser</h3>
               <a
                 href="https://rdavidsondev.itch.io/lamplighter"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Play Here</a
+                >itch.io</a
               >
               <a
                 href="https://github.com/rmvelez/2023Spooky2DJamProject"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >View the Github</a
+                >Github</a
               >
             </div>
           </div>
