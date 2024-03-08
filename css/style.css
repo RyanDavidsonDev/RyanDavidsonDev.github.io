@@ -256,6 +256,7 @@ textarea {
   top: 50%;
   border: 2px solid #eee;
   border-left: 2px solid #eee;
+  border-bottom: 0px;
   transform: translateY(-50%);
 }
 @media only screen and (max-width: 56.25em) {
@@ -285,7 +286,7 @@ textarea {
   transition: background 0.3s;
 }
 .home-hero__social-icon-link:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, .);
 }
 .home-hero__social-icon-link--bd-none {
   border-bottom: 0;
