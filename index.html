@@ -167,10 +167,7 @@
             <div class="skills">
               <div class="skills__skill">C#</div>
               <div class="skills__skill">C++</div>
-              <div class="skills__skill">C</div>
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Python/GDScript</div>
               <div class="skills__skill">Unity</div>
               <div class="skills__skill">Unreal Engine</div>
               <div class="skills__skill">Git</div>
@@ -182,8 +179,7 @@
               <div class="skills__skill">Presentation</div>
               <div class="skills__skill">Public speaking</div>
               <div class="skills__skill">Project Management</div>
-              <div class="skills__skill">Github Projects</div>
-              <div class="skills__skill">Trello</div>
+              <div class="skills__skill">JIRA</div>
             </div>
           </div>
           
@@ -212,8 +208,8 @@
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">My Projects</span>
           <span class="heading-sec__sub">
-            In the past year I've worked on several projects from Game Jams
-            to a long form project with former colleagues. Below you can view my current releases.
+            Since Graduation I've worked on several projects including both game jams and longer form
+            projects . Below you can view my current releases.
           </span>
         </h2>
         
@@ -231,14 +227,15 @@
 
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Star Charger</h3>
+              <h4 class="projects__row-content-subtitle"> Unity - C# - Programmer and Producer</h4>
               <p class="projects__row-content-desc">
                 Bullet hell space shooter where the player must dodge asteroids, collect energy,
                 and gain speed to shoot for a high score.<br/>
                 <strong>I designed, prototyped, and implemented</strong> mechanics for 
-                energy, charge, and speed, I also Implemented the User Interface
+                energy, and speed, Built User Interface and <strong>Object Pooling</strong> systems,
                 and parameterized values 
                 to <strong>keep design flexible</strong>. <br/>
-                As Producer, I also acted as the <strong>Project Manager</strong>, coordinating 
+                As Producer, I also acted as a <strong>Project Manager</strong>, coordinating 
                 delegation of tasks and organization of milestones for the team 
                 in the <strong>game development pipeline</strong>.
               </p>
@@ -263,9 +260,94 @@
 
           </div>
 
+
+          <div class="projects__row">            
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Bitwise Key - Unreal Engine</h3>
+              <h4 class="projects__row-content-subtitle"> Unreal Engine - C++ - Sole Programmer and Designer</h4>
+              <p class="projects__row-content-desc">
+                A first Person 3D Metroidvania Roguelike.
+                Player progression  is tied to the acquisition of various abilities. Each
+                run, the player's abilities are reset, and the level randomizes the placement
+                of the abilities and level geometry.
+              </br>
+                I've been the sole designer and programmer to develop all features including 
+                <strong>Enemy state tree AI</strong>, Randomization and Reset Mechanics 
+                via Event Delegates, and <strong>Character Movement Controls</strong>.
+              </p>
+              
+
+              <!--  href="./project-1.html" -->
+              <div class="project-details__links">
+                <a
+                  href="https://rdavidsondev.itch.io/bitwisekey"
+                  class="btn btn--med btn--theme project-details__links-btn"
+                  target="_blank"
+                  >Play here</a
+                >
+              </div>
+
+            </div>
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/BitwiseKey.png"
+                alt="A Gameplay Screenshot "
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/NanoEscape.PNG"
+                alt="A Gameplay Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>            
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Nano Escape - Godot</h3>
+              <h4 class="projects__row-content-subtitle"> Godot - GDScript - programmer and designer</h4>
+              <p class="projects__row-content-desc">
+                Bullet hell top down shooter. Players play as a nanobot swarm collecting more nanobots
+                to increase their size. Size provides
+                a greater pool of health, as well as more ammunition, but also decreases  
+                speed and maneuverability
+              </br>
+                As a <strong>programmer</strong> and designer. I <strong>spearheaded</strong> the 
+                design process, programmed the character controller and scaling systems, <strong>fine tuned</strong> 
+                the scaling system to feel organic and satisfying, and <strong>resolved issues</strong> 
+                with the object pooling infrastructure.
+              </p>
+              <div class="project-details__links">
+                <a
+                  href="https://dreamstorm-studios.itch.io/nano-escape"
+                  class="btn btn--med btn--theme project-details__links-btn"
+                  target="_blank"
+                  >Play Here</a
+                >    
+                <!--          
+                <a
+                  href="./YLYL.html"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  >Read More</a
+                >
+                -->
+              </div>
+            </div>
+          </div>
+
+          
+
           <div class="projects__row">            
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">LampLighter</h3>
+              <h4 class="projects__row-content-subtitle"> Unity - C# - Programmer and Project Manager</h4>
               <p class="projects__row-content-desc">
                 An Exploration and time management survival horror game in which you 
                 play as a lamplighter, exploring a haunted city, managing your resources 
@@ -303,9 +385,9 @@
               />
             </div>
           </div>
-
           
-
+             
+          
           
                     
           <div class="projects__row">
@@ -319,6 +401,7 @@
             </div>            
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">The Ultimate You Laugh You Lose</h3>
+              <h4 class="projects__row-content-subtitle"> Unity - C# - Programmer</h4>
               <p class="projects__row-content-desc">
                 Minigame centric local multiplayer party game where players collect items to sabotage other 
                 players by making them laugh. Submitted for <strong>Global Game Jam 2024</strong> with the theme "make me laugh"  </br>                
@@ -342,44 +425,6 @@
               </div>
             </div>
           </div>
-
-          <div class="projects__row">            
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Bitwise Key (in progress)</h3>
-              <p class="projects__row-content-desc">
-                First Person 3 dimensional Mashup of the Roguelike and Metroidvania Genres.
-                Player progression  is tied to the acquisition of various abilities. Each
-                new run, the player's abilities are reset, and the level randomizes the placement
-                of the abilities and level geometry.
-              </br>
-                This is currently a solo project, in which I've been the sole programmer to
-                implement <strong>AI behavior through state trees</strong>, the randomization
-                mechanics, and <strong>character movement controls</strong>.
-              </p>
-              
-
-              <!--  href="./project-1.html" -->
-              <div class="project-details__links">
-                <a
-                  href="https://github.com/RyanDavidsonDev/BitwiseKey"
-                  class="btn btn--med btn--theme project-details__links-btn"
-                  target="_blank"
-                  >view the github</a
-                >
-              </div>
-
-            </div>
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/BitwiseKey.png"
-                alt="A Gameplay Screenshot "
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          
-          
            
         </div>
       </div>

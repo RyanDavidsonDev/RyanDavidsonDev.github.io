@@ -418,7 +418,15 @@ textarea {
   
   font-weight: 700;
   font-size: 2.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: .75rem;
+  style: strong
+}
+.projects__row-content-subtitle {
+  
+  font-weight: 550;
+  color: rgb(70, 70, 70);
+  font-size: 1.4rem;
+  margin-bottom: .75rem;
 }
 @media only screen and (max-width: 37.5em) {
   .projects__row-content-title {
