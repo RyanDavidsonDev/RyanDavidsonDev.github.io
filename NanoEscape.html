@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bitwise Key Case Study</title>
-    <meta name="description" content="Case study page for Bitwise Key" />
+    <title>Nano Escape Project Page</title>
+    <meta name="description" content="Project Description Page for Nano Escape" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -84,12 +84,13 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Bitwise Key Case Study</h1>
+        <h1 class="heading-primary">Nano Escape Project Page</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            This page contains the case study for Bitwise Key, a first Person 3D Metroidvania Roguelike 
-            where the player progresses through a randomized world by collecting various abilities in
-            whatever order they deem fit. 
+            This page contains the Project page for Nano Escape, Top Down shooter in players take the
+            role of a nanite swarm trying to grow in size. Collecting pellets increases the player's size,
+            which in turn provides them more ammunition and a larger health pool, but also decreases speed
+            and maneuverability.
           </br>
           </br>
             Here, I'll go into more detail about the game and my development process.
@@ -119,31 +120,34 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                The first conceit for the game was inspired by playing a randomization 
-                mod for the popular metroidvania game Hollow Knight. I realized that much of 
-                why I enjoyed the original game was the process of learning how and where 
-                to use each new upgrade. Having to backtrack through my memories and level 
-                design to figure out how to use my new ability to move forward was a very 
-                compelling puzzle to solve, and the randomizer mod was allowing me to 
-                solve the puzzle in new ways. I realized I wanted to make this loop a core pillar
-                of my next game project. I drew further inspiration from roguelikes, 
-                with their constant loop of resetting to discover new abilities. 
-                A game in which the player progresses through a metroidvania-type progression between
-                the replay loop of a roguelike, while also granting them the  agency to approach 
-                the progression in whatever order they chose.
+                This was my first game created in godot, and was an entry for the 
+                2024 Game Maker's Toolkit game jam.
+                The length of the jam was 96 hours, and the theme was "Built to Scale". Our initial design
+                ideas centered around the ability to grow and shrink so as to fulfill various goals.
+                I wanted to add more depth to that mechanic, and I realized that a collectible resource
+                was a straightforward and effective way of doing so. Drawing inspiration from the old
+                browser game agar.io, I proposed a top down ("twinstick") shooter in which ammunition
+                was directly linked to the player's size. My teammates and I immediately began rolling
+                with this design idea. We connected size to other variables such as maximum health,
+                and allowed enemies to drop ammunition on death. My teammates came up with the
+                flavor: a swarm of nanobots. Firing expels nanobots from your swarm, while collecting
+                more allows the swarm to grow in size. 
               </p>
               <p class="project-details__desc-para">
 
-                The Capstone class was split into two segments; the first I’d used to expand and
-                fill out the gameplay mechanics: to add more depth to the randomization, improve
-                the level design, and zero in on a few gaps in the design. I do wish I’d had more
-                time to keep fleshing out the core design of the game - the randomization mechanics
-                especially felt like they’d been lacking a decent amount of substance. However, by
-                that point the second segment of the class had started, which was to focus on final
-                polish and juice for the game. In addition to more surface level changes such as
-                Audio implementation and bug fixing, I also really enjoyed fine tuning various effects
-                from the abilities. Particularly mechanical tidbits such as the recharge delays on stamina.
-              
+                I took special interest in the implementation and design of the scaling system, and
+                established a series of variables to interpolate factors such as speed, maximum health,
+                bullet damage, and enemy spawn rate relative to the minimum and maximum backend variables
+                for player size.
+                This was a somewhat more complicated system to balance compared to my prior game jams.
+                But by intentionally planning the infrastructure to directly connect so many variables,
+                it was incredibly fast and easy to fine tune the values. It was even easy to connect new
+                values - the enemy spawn rate was a last minute addition, but took less than 15 minutes
+                to implement and balance. Overall, I was incredibly satisfied with the end result of
+                this system. It felt very engaging and dynamic - progression felt easy enough to be
+                encouraging, but involved enough to be satisfying. I received several compliments on
+                the feel of the gameplay elements I designed and implemented, and was very
+                pleased with the game as a whole.
               </p>
             </div>
 
