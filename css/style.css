@@ -545,6 +545,13 @@ textarea {
   }
 }
 
+.readmore__btn{
+  width: 40%;
+  margin-bottom: 4rem;
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+}
+
 .project-cs-hero {
   color: #fff;
   background: linear-gradient(to right, rgba(16, 200, 16, 0.75), rgba(16, 200, 16, 0.75)), url(../assets/svg/common-bg.svg);
@@ -1168,5 +1175,6 @@ iframe{
     display:block;
   }
 }
+MoreProjectsContainer {display:none}
 
 /*# sourceMappingURL=style.css.map */

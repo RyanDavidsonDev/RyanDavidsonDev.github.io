@@ -7,6 +7,9 @@ const headerHamMenuCloseBtn = document.querySelector(
 )
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 
+var origButtonText
+var ShowingExtraProjs = false;
+
 hamMenuBtn.addEventListener('click', () => {
   if (smallMenu.classList.contains('header__sm-menu--active')) {
     smallMenu.classList.remove('header__sm-menu--active')
@@ -29,6 +32,32 @@ for (let i = 0; i < headerSmallMenuLinks.length; i++) {
     headerHamMenuCloseBtn.classList.add('d-none')
   })
 }
+
+function ReadMoreFunc() {
+  console.log("HELLO WORLD")
+
+  var MoreProjCon = document.getElementById("MoreProjectsContainer");
+  var MoreProjArr = ( document.getElementsByName ("ExtraProject"))
+  var moreText = document.getElementById("readMoreTextPrompt");
+  var btnText = document.getElementById("ReadMoreButton");
+
+  if (MoreProjCon.style.display ==="none") {
+
+
+    MoreProjCon.style.display = "inline";
+    origButtonText = btnText.innerHTML
+    btnText.innerHTML = "Hide Extra Projects"; 
+    moreText.style.display = "none";
+    
+    //set button text
+  } else {
+
+    MoreProjCon.style.display = "none";
+    btnText.innerHTML = origButtonText; 
+    moreText.style.display = "inline";
+
+  }
+} 
 
 // ---
 const headerLogoConatiner = document.querySelector('.header__logo-container')
