@@ -94,11 +94,9 @@
             style="text-decoration:underline" 
             target="_blank">Studio SE</a> on a part time, one month long contract.
           </br>
+          </br>
             Here, I'll go into more detail about the game and my development process.
           </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="https://rdavidsondev.itch.io/theultimateyoulaughyoulose" class="btn btn--bg" target="_blank">Play Here</a>
         </div>
       </div>
     </section>
@@ -121,35 +119,62 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                This game was originally created for the 2024 Global Game Jam, with the theme 
-                "make me laugh". The mechanical premise of the game was a minigame centric battle 
-                royale with the central win/loss mechanic being based around laughter. Collecting 
-                some items (such as the whoopie Cushion or air horn) would allow you to force 
-                other players to laugh, while others (doing taxes) would decrease your own,
-                laugh value, represented by a meter on the UI. When players had higher laugh
-                values they would move faster. This established a sense of risk-reward, as if 
-                their meter reached the max value, they would lose control over laughter, thus being
-                eliminated from the game. We added three separate Game Modes, each with unique 
-                win conditions. King of the Hill allowed players to earn points by standing in 
-                control zones that would periodically shift around the map. An obstacle course 
-                awarded the first player to reach the end. And the Last Man Standing was a free
-                for all in which the player still alive and with the lowest laugh meter at the 
-                end of the round would win. 
+
+                This Game was created on a part time contract for 
+                <a href="https://www.studiose.design" 
+                style="text-decoration:underline" 
+                target="_blank">Studio SE</a>, 
+                a Denver-based Company who offers instructional courses on 
+                Model Based Systems Engineering and SysML 
+                (a modeling and documentation language very similar to UML). 
+                They were attending a trade conference and wanted a video game 
+                to present in their booth as an attraction. They hired me as 
+                the sole designer and programmer to create this video game 
+                for them. While the final design was simpler than most of 
+                my projects, this was largely due to a few particular 
+                constraints. Most notably, the development cycle was only 
+                a month long, with myself as the sole contractor and an 
+                average maximum of 30 hours a week. 
+
               </p>
               <p class="project-details__desc-para">
-                I hadn't taken on as firm of a leadership role in this project as I had in others.
-                This was due to wanting to focus on the technical aspects and refamiliarize 
-                myself with Unreal Engine, which I hadn't used in some time, and was hoping to
-                pick back up for another project. The main contributions I provided were implementing
-                the players item abilities, as well as the logic surrounding the three different game
-                modes (as in the options for game modes visible to the players, as well as
-                Unreal Engine's Game Mode and Game State infrastructure). This involved creating 
-                the Base Game Mode, as well as two children to handle the added rulesets in King
-                of the Hill and the Obstacle Course. Even in a less leadership-oriented role,
-                my skills still came in handy for instructing my less experienced team members 
-                on how to use Git, acting as intermediary between them and the most experienced 
-                developers, and even resolving all of the major git issues that arose. 
+                
+
+                Despite these constraints, I was also given substantial 
+                independence on the project, being responsible for the design
+                and project management of the game.
+                Drawing from the educational nature of my Clients’ Business
+                model, I designed a game in which the player would utilize
+                their knowledge of SysML syntax to answer prompted questions 
+                and navigate the level. After laying out the original design,
+                I then planned out a milestone schedule to ensure manageable
+                expectations within the tight deadline. I planned single week 
+                sprints for each major phase of development: initial 
+                prototyping, a Minimum Viable Product, and content completion.
+                I also set aside an extra week at the end to allow ample room
+                for any additional tasks which tend to arise during the 
+                latter phases of any game project.
+                
+                
+
+              <p class="project-details__desc-para">
+
+                The technical infrastructure involved presenting questions 
+                that were randomly selected from a preset array of custom 
+                data assets, then Unreal’s event callback system would 
+                activate various effects based  on the accuracy of their 
+                answer. After successfully answering five questions and 
+                reaching the end, the player would then be added to the 
+                leaderboard. The Leaderboard data was stored with Unreal’s 
+                SaveGame feature and the FFileHelper library to generate 
+                a .xml file accessible outside the game. The final product 
+                was very successful, with high popularity at the conference 
+                and gleaming feedback from my clients. I'm very proud of 
+                the work I completed and my management of the project's 
+                constraints.
+                
               </p>
+
             </div>         
           </div>
           <div class="project-details__tools-used">
@@ -160,16 +185,6 @@
               <div class="skills__skill">Blueprints</div>
               <div class="skills__skill">Git</div>
               <div class="skills__skill">JIRA</div>
-            </div>
-          </div>
-          <div class="project-details__links">
-            <h3 class="project-details__content-title">See Live</h3>
-            <a
-              href="https://rdavidsondev.itch.io/modelrunner"
-              class="btn btn--med btn--theme project-details__links-btn"
-              target="_blank"
-              >Itch.io</a
-            >
             </div>
           </div>
         </div>
