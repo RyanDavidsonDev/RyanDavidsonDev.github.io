@@ -687,6 +687,7 @@ textarea {
   width: 120rem;
   grid-gap: 5rem;
   margin-bottom: 3rem;
+  padding-top: 10rem;
 }
 @media only screen and (max-width: 37.5em) {
   .project-details__row {
