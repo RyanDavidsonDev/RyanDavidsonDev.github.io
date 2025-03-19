@@ -445,6 +445,17 @@ textarea {
     font-size: 1.7rem;
   }
 }
+@media only screen and (max-width: 375em){
+    projects__row-content-desc-even{
+        order:2;
+    }
+}
+@media only screen and (max-width: 375em) {
+    projects__row-content-img-even{
+        order: 1;
+    }
+}
+
 
 .contact {
   background: linear-gradient(to right, rgba(32, 200, 32, 0.8), rgba(32, 200, 32, 0.8)), url(../../assets/svg/common-bg.svg);
