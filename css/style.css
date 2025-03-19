@@ -374,6 +374,7 @@ textarea {
 @media only screen and (max-width: 56.25em) {
   .projects__row {
     text-align: center;
+    list-style:none
   }
 }
 .projects__row:nth-child(even){
@@ -445,12 +446,12 @@ textarea {
     font-size: 1.7rem;
   }
 }
-@media only screen and (max-width: 375em){
+@media only screen and (max-width: 37.5em){
     projects__row-content-desc-even{
         order:2;
     }
 }
-@media only screen and (max-width: 375em) {
+@media only screen and (max-width: 37.5em) {
     projects__row-content-img-even{
         order: 1;
     }
