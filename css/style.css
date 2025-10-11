@@ -227,6 +227,7 @@ textarea {
   text-align: center;
   width: 100%;
   line-height: 1.6;
+  padding: 1rem;
 }
 @media only screen and (max-width: 37.5em) {
   .text-primary {
