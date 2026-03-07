@@ -209,11 +209,12 @@ textarea {
 }
 
 .sec-pad {
-  padding: 10rem 0;
+  padding: 12rem 0;
   padding-bottom: 0;
 }
 .sec-pad-contact{
     padding:10rem 0;
+    padding-bottom: 1rem;
 }
 @media only screen and (max-width: 56.25em) {
   .sec-pad {
