@@ -34,12 +34,11 @@ for (let i = 0; i < headerSmallMenuLinks.length; i++) {
 }
 
 function ReadMoreFunc() {
-  console.log("HELLO WORLD")
 
-  var MoreProjCon = document.getElementById("MoreProjectsContainer");
-  var MoreProjArr = ( document.getElementsByName ("ExtraProject"))
-  var moreText = document.getElementById("readMoreTextPrompt");
-  var btnText = document.getElementById("ReadMoreButton");
+  const MoreProjCon = document.getElementById("MoreProjectsContainer");
+  const MoreProjArr = ( document.getElementsByName ("ExtraProject"))
+  const moreText = document.getElementById("readMoreTextPrompt");
+  const btnText = document.getElementById("ReadMoreButton");
 
   if (MoreProjCon.style.display ==="none") {
 
